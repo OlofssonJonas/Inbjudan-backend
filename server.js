@@ -12,7 +12,7 @@ const cluster = process.env.CLUSTER
 
 
 app.use(express.json())
-    //app.use(cors)
+   
 
 
 //den här filvägen ska användas
