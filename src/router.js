@@ -2,7 +2,6 @@ const express = require('express')
 const { mongoose } = require('mongoose')
 const router = express.Router()
 const KidModel = require('./model')
-const assert = require('assert')
 
 
 router.get('/', async (req, res) => {
@@ -10,7 +9,7 @@ router.get('/', async (req, res) => {
     res.send(kids)
 })
 
-router.post('/', async (req, res) => {
+        router.post('/', async (req, res) => {
     const kid = new KidModel(req.body)
     await kid.save()
     res.status(201).json(kid)

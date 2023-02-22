@@ -5,5 +5,5 @@ POST http://localhost:2000/api/kids
 Content-Type: application/json
 
 {
-    "name": "Jonas"
+    "name": "Viktoria"
 }
