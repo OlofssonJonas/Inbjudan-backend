@@ -6,7 +6,7 @@ const KidModel = require('./model')
 
 router.get('/', async (req, res) => {
     const kids = await KidModel.find()
-    res.send(kids)
+    res.status(200).json('Hello')
 })
 
         router.post('/', async (req, res) => {
