@@ -1,4 +1,4 @@
-GET http://localhost:2000/api/kids
+GET http://localhost:2000/api/kids/admin
 
 ###
 
@@ -7,5 +7,5 @@ POST http://localhost:2000/api/kids
 Content-Type: application/json
 
 {
-    "name": "Viktoria"
+    "name": "Sofia"
 }

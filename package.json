@@ -1,7 +1,6 @@
 {
   "name": "inbjudan-backend",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "engines": {
     "node": "14.x"
@@ -19,5 +18,14 @@
     "express": "^4.18.2",
     "mongoose": "^6.9.2",
     "node-fetch": "^3.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlofssonJonas/Inbjudan-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OlofssonJonas/Inbjudan-backend/issues"
+  },
+  "homepage": "https://github.com/OlofssonJonas/Inbjudan-backend#readme",
+  "description": ""
 }

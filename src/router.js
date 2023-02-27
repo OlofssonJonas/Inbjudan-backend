@@ -4,7 +4,7 @@ const router = express.Router()
 const KidModel = require('./model')
 
 
-router.get('/', async (req, res) => {
+router.get('/admin', async (req, res) => {
     const kids = await KidModel.find()
     res.status(200).json(kids)
 })
