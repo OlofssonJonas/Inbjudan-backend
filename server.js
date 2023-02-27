@@ -4,15 +4,15 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 require('dotenv').config();
 //console.log(process.env)
-const port = 2000
+const port = 2000   
 const Router = require('./src/router')
 const username = process.env.NAME
 const password = process.env.PASSWORD
 const cluster = process.env.CLUSTER
 
+app.use(cors());
 
 app.use(express.json())
-   
 
 
 //den här filvägen ska användas
