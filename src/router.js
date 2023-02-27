@@ -15,19 +15,4 @@ router.get('/admin', async (req, res) => {
     res.status(201).json(kid)
 })
 
-// router.post('/', function(req, res) {
-//     var item = {
-//         name: req.body.name
-//     }
-//     mongoose.connect('mongodb:localhost:27017/Viktoria_5', function(err, db) {
-//         assert.equal(null, err);
-//         db.collection('kids').insertOne(item, function(err, result) {
-//             assert.equal(null, error);
-//             console.log('item inserted')
-//             db.close()
-//         })
-//     })
-//     res.redirect('/')
-// })
-
 module.exports = router
