@@ -7,5 +7,12 @@ POST http://localhost:2000/api/kids
 Content-Type: application/json
 
 {
-    "name": "Sofia"
+    "name": "Sofia",
+    "content": "hej",
+    "isComing": true
 }
+
+###
+
+DELETE http://localhost:2000/api/kids/63f353e65ee42e0e96bc8271
+

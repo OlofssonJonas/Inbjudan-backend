@@ -4,13 +4,19 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 require('dotenv').config();
 //console.log(process.env)
+
+const bodyParser = require('body-parser')
 const port = 2000   
 const Router = require('./src/router')
 const username = process.env.NAME
 const password = process.env.PASSWORD
 const cluster = process.env.CLUSTER
+const ip = require('ip')
+console.log(ip.address())
 
 app.use(cors());
+app.use(bodyParser.urlencoded({extended: true}))
+
 
 app.use(express.json())
 
