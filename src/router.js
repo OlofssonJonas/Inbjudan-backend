@@ -11,17 +11,19 @@ router.get('/admin', async (req, res) => {
 
         router.post('/', async (req, res) => {
     const kid = await KidModel.create(req.body)
-    console.log(req.body)
+    console.log(kid )
     res.status(201).json(kid)
 })
 
 
 router.delete('/:id', async (req, res) => {
-    const kid = await KidModel.findByIdAndDelete(req.params.id)
-    if(!req.params.id) {
-        res.send('Noway')
-    }
+    try{
+        const kid = await KidModel.findByIdAndDelete(req.params.id)
         res.status(200).json(`Successfully deleted ${req.params.id}`)
+        
+        }catch(error) {
+            res.status(404).json('hell no!')
+        }
 }) 
 
 

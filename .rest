@@ -14,5 +14,5 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:2000/api/kids/63f353e65ee42e0e96bc8271
+DELETE http://localhost:2000/api/kids/63fe1
 

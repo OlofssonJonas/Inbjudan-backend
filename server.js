@@ -30,7 +30,7 @@ async function init() {
         mongoose.set('strictQuery', true);
         //const options = {userNewUrlParser: true, userUnifiedTopoLogy: true}
         let uri = `mongodb+srv://${username}:${password}@${cluster}/?retryWrites=true&w=majority`
-        mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopoLogy: true})
+         mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopoLogy: true})
         const connection = mongoose.connection
         connection.once('open', () => {console.log('connected to DB')
         app.listen (process.env.PORT || port, () => console.log(`server is up and running on port ${port}`))
