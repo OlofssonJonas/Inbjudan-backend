@@ -12,10 +12,10 @@ const username = process.env.NAME
 const password = process.env.PASSWORD
 const cluster = process.env.CLUSTER
 const ip = require('ip')
-console.log(ip.address())
+//console.log(ip.address())
 
 app.use(cors());
-app.use(bodyParser.urlencoded({extended: true}))
+//app.use(bodyParser.urlencoded({extended: true}))
 
 
 app.use(express.json())
