@@ -19,8 +19,8 @@ router.get('/admin', async (req, res) => {
 
 router.delete('/:id', async (req, res) => {
     try{
-        const kid = await KidModel.findByIdAndDelete(req.params.id)
-        res.status(200).json(`Successfully deleted ${req.params.id}`)
+        const kid = await KidModel.deleteMany({"name": "Jonas"})
+        res.status(200).json(kid)
         }catch(error) {
             res.status(404).json('hell no!')
         }
