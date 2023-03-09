@@ -4,16 +4,14 @@ const router = express.Router()
 const { KidModel, AdultModel } = require('./model')
 
 
-router.get('/kids', async (req, res) => {
+router.get('/kids/admin', async (req, res) => {
      const kids = await KidModel.find()
      res.status(200).json(kids)
-    res.json('kids')
 })
 
 router.get('/adults/admin', async (req, res) => {
      const adults = await AdultModel.find()
-     res.status(200).json('adults')
-    //res.json('adults')
+     res.status(200).json(adults)
 })
 
         router.post('/kids', async (req, res) => {
