@@ -21,8 +21,9 @@ app.use(cors());
 app.use(express.json())
 
 
-//den här filvägen ska användas
+//dem här filvägarna ska användas
 app.use('/api/kids', Router)
+app.use('/api/adults', Router)
 
 
 

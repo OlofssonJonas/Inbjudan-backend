@@ -1,9 +1,12 @@
-GET http://localhost:2000/api/kids/admin
+GET http://localhost:2000/api/kids/kids/admin
 
 ###
 
+GET http://localhost:2000/api/adults/adults/admin
 
-POST http://localhost:2000/api/kids
+###
+
+POST http://localhost:2000/api/kids/kids
 Content-Type: application/json
 
 {
@@ -14,5 +17,20 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:2000/api/kids/admin
+POST http://localhost:2000/api/adults/adults
+Content-Type: application/json
+
+{
+    "name": "Farfar",
+    "content": "hejsan",
+    "isComing": true
+}
+
+###
+
+DELETE http://localhost:2000/api/kids/kids/admin
+
+###
+
+DELETE http://localhost:2000/api/adults/adults/admin
 
