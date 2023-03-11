@@ -22,8 +22,7 @@ app.use(express.json())
 
 
 //dem här filvägarna ska användas
-app.use('/api/kids', Router)
-app.use('/api/adults', Router)
+app.use('/api', Router)
 
 
 

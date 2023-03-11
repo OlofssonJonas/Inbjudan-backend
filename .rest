@@ -1,23 +1,23 @@
-GET http://localhost:2000/api/kids/kids/admin
+GET http://localhost:2000/api/kids/admin
 
 ###
 
-GET http://localhost:2000/api/adults/adults/admin
+GET http://localhost:2000/api/adults/admin
 
 ###
 
-POST http://localhost:2000/api/kids/kids
+POST http://localhost:2000/api/kids
 Content-Type: application/json
 
 {
-    "name": "Jonas",
+    "name": "Mormor",
     "content": "hejsan",
     "isComing": true
 }
 
 ###
 
-POST http://localhost:2000/api/adults/adults
+POST http://localhost:2000/api/adults
 Content-Type: application/json
 
 {
@@ -28,9 +28,9 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:2000/api/kids/kids/admin
+DELETE http://localhost:2000/api/kids/admin
 
 ###
 
-DELETE http://localhost:2000/api/adults/adults/admin
+DELETE http://localhost:2000/api/adults/admin
 
