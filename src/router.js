@@ -13,6 +13,7 @@ router.get('/kids/admin', async (req, res) => {
 router.get('/adults/admin', async (req, res) => {
      const adults = await AdultModel.find()
      res.status(200).json(adults)
+     console.log(adults.length)
 })
 
 //POST A NEW KID
